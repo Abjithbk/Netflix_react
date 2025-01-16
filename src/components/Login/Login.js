@@ -48,7 +48,9 @@ function Login() {
              <div className='checkbox2'>
               <input type="checkbox"/>
               <label htmlFor="">Remember me</label>
-              <span>Sign in now</span>
+              <span onClick={()=> {
+                navigate('/signup')
+              }} >Sign up now</span>
              </div>
       </div>
     </div>

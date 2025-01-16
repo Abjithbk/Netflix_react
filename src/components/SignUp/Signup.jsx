@@ -32,7 +32,7 @@ function Signup() {
         phno:phno,
       })
 
-      navigate('/Login')
+      navigate('/Login');
       
   }
   return (
@@ -54,7 +54,9 @@ function Signup() {
              <div className='checkbox1'>
               <input type="checkbox"/>
               <label htmlFor="">Remember me</label>
-              <span>Sign in now</span>
+            <span onClick={()=> {
+              navigate('/Login')
+            }} >Sign in now</span>
              </div>
        </div>
     </div>

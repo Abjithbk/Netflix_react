@@ -6,9 +6,20 @@ import Signup from './components/SignUp/Signup';
 import Login from './components/Login/Login';
 import { action, comedyMovies, documentary, horrorMovies, orginals, romanticMovies } from './url';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom'
-
+import {useContext,useEffect} from 'react'
+import {AuthContext} from './store/FirebaseContext'
+import app from './Firebase/config'
+import {getAuth,onAuthStateChanged} from 'firebase/auth'
 function App() {
-
+const {user,setUser} = useContext(AuthContext)
+const auth = getAuth(app)
+useEffect(()=> {
+     const unsub = onAuthStateChanged(auth,(user) => {
+      setUser(user)
+     })
+    return () => unsub();
+     
+},[auth,setUser])
   return (
     <div>
       <Router>
