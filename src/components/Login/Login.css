@@ -1,0 +1,65 @@
+body.Login-page {
+    background-image: url('https://www.okynemedialab.com/wp-content/uploads/2019/11/netflix-background-1024x576.jpg');
+    background-size: cover;
+ }
+ h1 {
+     color: white;
+     font-size: 32px;
+     font-weight: 700;
+ }
+ .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+ 
+     padding: 2.5rem;
+     background-color:rgba(0, 0, 0, 0.7);
+     border-radius: 6px;
+     border: 1px solid transparent;
+     color: white;
+ }
+ 
+ form input {
+     min-width: 18rem;
+     padding: 1rem;
+     height: 0.6rem;
+     /* background-color: gray; */
+     color: white;
+     border-radius: 8px;
+     border: 1px solid transparent;
+     outline: none;
+     cursor: pointer;
+     margin-top: 2rem;
+ }
+ .logo2 {
+    position: fixed;
+    left: 103px;
+    top: 24px;
+    width: 128px;
+ }
+.buttonLogin {
+    margin-top: 26px;
+    padding: 0.85rem;
+    border-radius: 0.5rem;
+    font-size: medium;
+    min-width: 20rem;
+    cursor: pointer;
+    background: rgb(229, 9, 20);
+}
+.checkbox2 {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+.checkbox2 span {
+    padding-left: 25px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
