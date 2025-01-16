@@ -36,7 +36,7 @@ useEffect(()=> {
     <RawPost url = {documentary} isSmall title="Documentaries" />
         </>
       }/>
-        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/Signup' element={<Signup/>}/>
         <Route path='/Login' element={<Login />} />
         </Routes>
       </Router>  

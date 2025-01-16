@@ -49,7 +49,7 @@ function Login() {
               <input type="checkbox"/>
               <label htmlFor="">Remember me</label>
               <span onClick={()=> {
-                navigate('/signup')
+                navigate('/Signup')
               }} >Sign up now</span>
              </div>
       </div>
