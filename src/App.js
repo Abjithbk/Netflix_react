@@ -22,9 +22,9 @@ useEffect(()=> {
 },[auth,setUser])
   return (
     <div>
-      <Router>
+      <Router basename = '/Netflix_react' >
         <Routes>
-      <Route path='/' element={
+      <Route path='/'  element={
         <>
     <Navbar />
     <Banner />
